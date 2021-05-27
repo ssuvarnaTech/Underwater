@@ -5,7 +5,7 @@ class Play extends Phaser.Scene{
     }
     preload(){
         this.load.image('border', 'assets/border.png');
-        this.load.image('lair', 'assets/lair2.png');
+        this.load.image('lair', 'assets/lair.png');
         this.load.image('ariel', 'assets/ariel.png');
         this.load.image('ursula', 'assets/ursula.png');
         this.load.image('trident', 'assets/trident2.png');

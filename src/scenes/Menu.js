@@ -8,10 +8,14 @@ class Menu extends Phaser.Scene{
         this.load.audio('sfx_select', 'assets/splash.wav');
         this.load.audio('sfx_explosion', 'assets/spell.wav');
         this.load.audio('sfx_rocket', 'assets/bubbles.wav');
-        this.load.image('cover', 'assets/underthesea.jpeg');
+        this.load.image('cover', 'assets/bakground.png');
+        this.load.audio('music', 'assets/disney.mp3');
+        
       }
 
     create(){
+      music = this.sound.add('music');
+      music.play();
         let menuConfig = {
             fontFamily: 'Comic Sans',
             fontSize : '36px',
@@ -49,7 +53,7 @@ class Menu extends Phaser.Scene{
             gameTimer: 60000    
           }
           this.sound.play('sfx_select');
-          this.scene.start('playScene');    
+          this.scene.start('intro1');    
         }
         // if (Phaser.Input.Keyboard.JustDown(keyRIGHT)) {
         //   // hard mode

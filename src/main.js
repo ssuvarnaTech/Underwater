@@ -13,13 +13,14 @@ let config = {
     width: 640,
     height : 480,
     backgroundColor: "#4B0082",
-    scene: [Menu,Play],
+    scene: [Menu,Intro1,Intro2, Play],
 }
 let game = new Phaser.Game(config);
 let borderUISize = game.config.height/ 15;
 let borderPadding = borderUISize/ 3;
 
 let keyF,keyR,keyLEFT, keyRIGHT,keyS;
+let music;
 
 
 
